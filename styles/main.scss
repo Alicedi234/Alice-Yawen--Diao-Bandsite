@@ -1,0 +1,112 @@
+@use "./partials/variables" as *;
+@use "./partials/globals" as *;
+@use "./partials/mixins" as *;
+@use "./partials/typography";
+@use "./partials/header";
+
+.header{
+  @include size(10%,100%);
+  &__nav{
+    background-color:$primary-color1;
+    width:100%;
+    // @include tablet{
+    //   background-color: ;
+    // }
+  
+    &--logo{
+      padding:24px;
+      @include flex(row,center,center,nowrap)
+    }
+  }
+  &__menu{
+    @include flex(row,center,center,nowrap);
+    color:$primary-color3;
+    &--link{
+      padding-bottom: 16px;
+    }
+  }
+}
+.banner{
+  background-image: url(../assets/Images/hero-bio.jpg);
+@include background-style;
+@include size(250px,100%);
+color:$primary-color3;
+&__image{
+  @include flex(column,center,center,nowrap);
+  background-color: rgba(50, 50, 50,0.5);
+  width:100%;
+  height:250px;
+   &--title{
+   margin-left:0;
+   opacity: 1;
+   color:white;
+   fill:white;
+   height:250px;
+   width:100%;
+   padding-left:22px;
+   padding-top:90px;
+
+  }
+}
+}
+
+// :active{
+// color: white;}
+// add border to Biography
+
+.hero{
+  padding-left:16px;
+  padding-right:16px;
+  &__title{
+    @include font-style(24px,32px,700);
+    padding-top:24px;
+    padding-bottom:16px;
+  }
+  &__subtitle{
+    padding-top:24px;
+    }
+  &__subtitle2{
+    padding-top:24px;
+    padding-bottom:16px;
+  }
+  &__content{
+    padding-top: 24px;
+    &--title{
+      padding-bottom:16px;
+      padding-top:24px;
+    }
+    &--text{
+      padding-bottom:16px;
+      padding-top:24px;
+    }
+    &--text2{
+      padding-top:24px;
+      padding-bottom:16px;
+    }
+  }
+}
+
+// gallary,width:25%, height is the same.
+.content{
+  padding-left:16px;
+  padding-right:16px;
+  background-color: $secondary-color3;
+  @include size(auto,100%);
+  &__title{
+    @include font-style(24px,32px,700);
+    @include flex(column,center,center,nowrap);
+    padding-top:24px;
+    padding-bottom:16px;
+    
+  }
+  &__item{
+    @include size(px,100%)
+  }
+}
+.content__image{
+  @include flex(column,center,center,wrap);
+  &--item{
+  @include size(350px, 100%);
+  padding-bottom:16px;
+}
+}

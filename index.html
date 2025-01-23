@@ -4,40 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
   <!-- header -->
 <header class="header">
-  <div class="header__nav">
-
-    <div class="header__nav__logo">
-      <ul>
-      <li>BANDSITE</li>
-      <li>Biography</li>
-      <li>Shows</li>
+    <div class="header__nav">
+      <div class="header__nav--logo">
+        <img src="./assets/Logo/Logo-bandsite.svg" alt="Bandsite">
+      </div>
+      <ul class="header__menu">
+      <li class="header__menu--link" >Biography</li>
+      <li class="header__menu--link">Shows</li>
       </ul>
     </div>
-  </div>
-    <div class="header__title">
-      <h1>The Bees Knees</h1>
-    </div>
-  </div>  
 </header>
+
+<div class="banner">
+  <div class="banner__image">
+    <h1 class="banner__image--title">The Bees Knees</h1>
+  </div>
+  <!-- height: same as the image -->
+ 
+  <!-- text 100% opacity, class name -->
+  <!-- backgound color and background color -->
+</div>
+
+
 <!-- hero -->
 <section class="hero">
-<div class=""hero__title>
+<div class="hero__title">
   <h1>About the Musicians</h1>
 </div>
 <div class="hero__image">
-  <img src="./assets/images/band.jpg" alt="The Bees Knees">
+  <img src="./assets/images/band.jpg" alt="The Bees Knees" style="width:100%">
 </div>
 <div class="hero__subtitle">
   <p>"We push each other to be the best. It's not uncommon for one of us to say 'this needs to be better, back to the drawing board'"</p>
-  <p>-Lead vocalist of The Bees Knees</p>
+  <p class="hero__subtitle2">- Lead vocalist of The Bees Knees</p>
 </div>
 <div class="hero__content">
-  <h2>The Bees Knees</h2>
-  <p>The Bees Knees is a pop rock band originating
+  <h2 class="hero__content--title">The Bees Knees</h2>
+  <p class="hero__content--text">The Bees Knees is a pop rock band originating
     from San Francisco, California. The band
     consists a dynamic lineup featuring two lead
     vocalists, two guitarists, a bassist, a
@@ -50,8 +58,7 @@
     with more support, pushing The Bees Knees to
     sign with a well known record label.
     </p>
-    <p>From there, the band has soared, gaining
-    international recognition and ranking in the top
+    <p class="hero__content--text2">From there, the band has soared, gaining international recognition and ranking in the top
     10 on the Poster Charts. New fans immediately
     fell in love with the band’s original and organic
     attitude, solidifying their place as one of the
@@ -66,24 +73,31 @@
 </div>
 </section>
 <!-- content -->
-<section class="content"></section>
-
-<div class="content__title">
-  <h1>Photo Gallery</h1>
-</div>
-<div class="content__image">
-  <img src="./assets/images/Photo-gallery-1.jpg" alt="The Bees Knees">
-  <img src="./assets/images/Photo-gallery-2.jpg" alt="The Bees Knees">
-  <img src="./assets/images/Photo-gallery-3.jpg" alt="The Bees Knees">
-  <img src="./assets/images/Photo-gallery-4.jpg" alt="The Bees Knees">
-  <img src="./assets/images/Photo-gallery-5.jpg" alt="The Bees Knees">
-  <img src="./assets/images/Photo-gallery-6.jpg" alt="The Bees Knees">
-  <img src="./assets/images/Photo-gallery-7.jpg" alt="The Bees Knees">
-  <img src="./assets/images/Photo-gallery-8.jpg" alt="The Bees Knees">
-  <img src="./assets/images/Photo-gallery-9.jpg" alt="The Bees Knees">
-</div>
-
-
+<section class="content">
+  <div class="content__title">
+    <h1>Photo Gallery</h1>
+  </div>
+  <div class="content__item">
+    <img src="./assets/images/Photo-gallery-1.jpg" alt="The Bees Knees" 
+  class="content__image--item">
+    <img src="./assets/images/Photo-gallery-2.jpg" alt="The Bees Knees" 
+  class="content__image--item">
+    <img src="./assets/images/Photo-gallery-3.jpg" alt="The Bees Knees" 
+  class="content__image--item">
+    <img src="./assets/images/Photo-gallery-4.jpg" alt="The Bees Knees" 
+  class="content__image--item">
+    <img src="./assets/images/Photo-gallery-5.jpg" alt="The Bees Knees" 
+  class="content__image--item">
+    <img src="./assets/images/Photo-gallery-6.jpg" alt="The Bees Knees" 
+  class="content__image--item">
+    <img src="./assets/images/Photo-gallery-7.jpg" alt="The Bees Knees" 
+  class="content__image--item">
+    <img src="./assets/images/Photo-gallery-8.jpg" alt="The Bees Knees" 
+  class="content__image--item">
+    <img src="./assets/images/Photo-gallery-9.jpg" alt="The Bees Knees" 
+  class="content__image--item">
+  </div>
+</section>
 <!-- footer -->
 <section class="footer">
 <h1>Get in Touch</h1>
