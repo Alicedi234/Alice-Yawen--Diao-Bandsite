@@ -123,18 +123,16 @@ a {
   height: 250px;
 }
 .banner__image--title {
-  margin-left: 0;
+  margin: 0;
   opacity: 1;
   color: white;
   fill: white;
-  height: 250px;
-  width: 100%;
-  padding-left: 22px;
+  height: 148px;
+  width: 90%;
+  padding-left: 16px;
   padding-top: 90px;
 }
 .hero {
-  padding-left: 16px;
-  padding-right: 16px;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -148,9 +146,8 @@ a {
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
-  padding-top: 24px;
-  padding-bottom: 16px;
-  width: 100%;
+  padding: 16px;
+  width: 90%;
 }
 @media screen and (min-width: 768px) {
   .hero__title {
@@ -163,22 +160,10 @@ a {
   }
 }
 .hero__image {
-  height: 100px;
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-@media screen and (min-width: 768px) {
-  .hero__image {
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .hero__image {
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
+  width: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 16px;
 }
 .hero__subtitle {
   padding-top: 24px;
@@ -241,20 +226,19 @@ a {
   }
 }
 .hero__content--text {
-  padding-bottom: 16px;
-  padding-top: 24px;
-  width: 100%;
+  padding: 16px;
+  width: 90%;
 }
 .hero__content--text2 {
-  padding-top: 24px;
-  padding-bottom: 16px;
-  width: 100%;
+  padding: 16px;
+  width: 90%;
 }
-.hero .content {
+
+.content {
   background-color: #FAFAFA;
   width: 100%;
 }
-.hero .content__title {
+.content__title {
   font-family: Nunito Sans;
   font-size: 24px;
   line-height: 32px;
@@ -264,7 +248,7 @@ a {
   padding-left: 16px;
   padding-right: 16px;
 }
-.hero .content__image {
+.content__image {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -274,20 +258,41 @@ a {
   padding-bottom: 16px;
   padding-top: 16px;
 }
-.hero .content__image--item {
-  width: 100%;
+@media screen and (min-width: 768px) {
+  .content__image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+}
+.content__image--item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
   padding-bottom: 16px;
   padding-left: 16px;
   padding-right: 16px;
 }
-.hero .footer {
+@media screen and (min-width: 768px) {
+  .content__image--item {
+    width: 25%;
+  }
+}
+
+.footer {
   background-color: #323232;
   color: #FFFFFF;
   width: 100%;
   height: auto;
   padding-top: 24px;
 }
-.hero .footer__title {
+.footer__title {
   font-family: Nunito Sans;
   font-size: 24px;
   line-height: 32px;
@@ -296,7 +301,7 @@ a {
   padding-bottom: 16px;
   padding-left: 16px;
 }
-.hero .footer__icon {
+.footer__icon {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -306,11 +311,11 @@ a {
   width: 30%;
   padding-bottom: 16px;
 }
-.hero .footer__icon--item {
+.footer__icon--item {
   margin-left: -164px;
   height: 25px;
 }
-.hero .footer__subtitle {
+.footer__subtitle {
   font-family: Nunito Sans;
   font-size: 14px;
   line-height: 22px;
@@ -319,7 +324,7 @@ a {
   padding-bottom: 16px;
   padding-left: 16px;
 }
-.hero .footer__text {
+.footer__text {
   font-family: Nunito Sans;
   font-size: 14px;
   line-height: 22px;
@@ -327,19 +332,19 @@ a {
   padding-bottom: 16px;
   padding-left: 16px;
 }
-.hero .footer__text--attached {
+.footer__text--attached {
   font-family: Nunito Sans;
   font-size: 14px;
   line-height: 22px;
   font-weight: 400;
   padding-left: 16px;
 }
-.hero .footer__logo {
+.footer__logo {
   padding-top: 24px;
   padding-bottom: 16px;
   padding-left: 16px;
 }
-.hero .footer__logo--text {
+.footer__logo--text {
   font-family: Nunito Sans;
   font-size: 14px;
   line-height: 22px;
