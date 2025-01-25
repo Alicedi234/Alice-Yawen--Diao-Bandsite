@@ -235,6 +235,14 @@ color:$primary-color3;
     padding-left:16px;
     padding-right:16px;
     @include mobile-pageheader;
+    @include tablet{
+      @include desktop-subheader;
+      padding-left:48px;
+      padding-top:48px;
+    }
+    @include desktop{
+      @include desktop-subheader;
+    }
   }
   &__image{
     @include flex(column,center,center,wrap);
@@ -243,7 +251,9 @@ color:$primary-color3;
     padding-top:16px;
     @include tablet{
       @include flex(row, center, center, wrap);
-      width: 80%;
+      width: 100%;
+    }
+    @include desktop{ 
     }
 
     &--item{
@@ -254,7 +264,9 @@ color:$primary-color3;
       padding-right:16px;
 
       @include tablet{
-        width: 25%;
+        width: 30%;
+      }
+      @include desktop{
       }
     }
 
@@ -262,11 +274,11 @@ color:$primary-color3;
 }
 //footer
 .footer{
+  position: relative;
   background-color: $primary-color1;
- color:$primary-color3;
- width:100%;
-height:auto;
-padding-top:24px;
+  color:$primary-color3;
+  width:100%;
+  padding-top:24px;
 &__title{
   padding-top:24px;
   padding-bottom:16px;
@@ -274,40 +286,109 @@ padding-top:24px;
   @include mobile-pageheader;
   font-weight:900;
   font-size:22px;
+  position: relative;
+  @include tablet{
+    @include desktop-sectionheader;
+    display: inline-block;
+    padding-left:48px;
+    @include desktop{
+      max-width: 1000px;
+      padding-left:64px;
+    }
+  }
 }
 &__icon{
-  @include flex(row,flex-start,center,wrap);
-  gap:5px;
-  width:30%;
+  @include flex(row,center,center,nowrap);
+  width:42%;
+  height:6vh;
+  margin-left:3%;
   padding-bottom:16px;
+  @include tablet{
+    height:7vh;
+    width:30%;
+    margin-left:0;
+    display: inline-block;
+    margin-left:5%;
+    @include desktop{
+      max-width: 1000px;
+      height:6vh;
+    }
+  }
   &--item{
-    margin-left:-164px;
     height:25px
   }
 }
-&__subtitle{
-  padding-top:24px;
-  padding-bottom:16px;
-  padding-left:16px;
-  @include mobile-subheader;
-}
 &__text{
-  padding-bottom:16px;
-  padding-left:16px;
+ padding-left:16px;
   @include mobile-bodycopy;
-  &--attached{
-    padding-left:16px;
-    @include mobile-bodycopy;
+  @include tablet{
+    @include flex(row,space-between,center,nowrap);
+    width:100%;
+    @include desktop{
+      width:70%;
+      margin-left:0;
+    }
   }
+  &--title{
+    @include mobile-subheader;
+    padding-top:16px;
+    padding-bottom:16px;
+    @include tablet{
+      @include desktop-bodycopy;
+      font-weight:700;
+      @include desktop{
+        @include desktop-bodycopy;
+        max-width: 1000px;
+    }
+  }
+}
+&--content{
+  @include mobile-bodycopy;
+  @include tablet{
+    @include desktop-bodycopy;
+  @include desktop{
+    max-width: 1000px;
+  }
+  }
+}
+&--content2{
+  padding-top:0px;
+  padding-bottom:16px;
+}
 }
 &__logo{
   padding-top:24px;
   padding-bottom:16px;
   padding-left:16px;
+  @include tablet{
+    position: absolute;
+    left:80%;
+    top:8%;
+    display: inline-block;
+    @include desktop{
+    }
+  }
 &--text{
   padding-bottom:16px;
   padding-left:16px;
   @include mobile-bodycopy;
+  @include tablet{
+    @include desktop-footercopy;
+    padding-left:53px;
+    padding-top:48px;
   }
+  }
+}
+}
+
+.footer__icon--highlight{
+  @include tablet{
+    margin-left:10%;
+    margin-right:10%;
+  }
+}
+.footer__text--container1{
+  @include tablet{
+  margin-left:5%;
 }
 }
