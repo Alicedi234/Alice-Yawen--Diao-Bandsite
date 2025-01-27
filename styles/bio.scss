@@ -281,6 +281,8 @@ color:$primary-color3;
       @include flex(row, center, center, wrap);
       width:90%;
       padding-bottom:16px;
+      filter:grayscale(100%);
+      transition:filter 0.3s ease;
       @include tablet{
         width: 30%;
       }
@@ -289,6 +291,10 @@ color:$primary-color3;
     }
 
   }
+}
+.content__image--item:hover{
+  filter:grayscale(0%);
+
 }
 //footer
 .footer{
@@ -319,6 +325,7 @@ color:$primary-color3;
   @include flex(row,center,center,nowrap);
   width:42%;
   height:6vh;
+  margin-left:16px;
   @include tablet{
     height:7vh;
     width:30%;
@@ -372,6 +379,9 @@ color:$primary-color3;
 &--content2{
   padding-top:0px;
   padding-bottom:16px;
+}
+&--content3{
+  color:$primary-color3;
 }
 }
 &__logo{

@@ -471,12 +471,18 @@ ul {
   flex-wrap: wrap;
   width: 90%;
   padding-bottom: 16px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
 }
 @media screen and (min-width: 768px) {
   .content__image--item {
     width: 30%;
   }
 }
+.content__image--item:hover {
+  filter: grayscale(0%);
+}
+
 .footer {
   position: relative;
   background-color: #323232;
@@ -522,6 +528,7 @@ ul {
   flex-wrap: nowrap;
   width: 42%;
   height: 6vh;
+  margin-left: 16px;
 }
 @media screen and (min-width: 768px) {
   .footer__icon {
@@ -615,6 +622,9 @@ ul {
   padding-top: 0px;
   padding-bottom: 16px;
 }
+.footer__text--content3 {
+  color: #FFFFFF;
+}
 .footer__logo {
   padding-top: 48px;
   padding-bottom: 16px;
@@ -677,4 +687,4 @@ ul {
     width: 100%;
     padding-top: 24px;
   }
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=bio.css.map */
